@@ -20,6 +20,8 @@ html,body{
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+	background-color: #181818;
+	font-family: 'Graphik', sans-serif;
 }
 input,button,textarea{font-family:inherit;}
 input::-ms-clear{display: none;}
@@ -31,3 +33,58 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
+
+.wrap {
+	min-height: 100%;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 30px 300px;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+}
+
+.nav__list {
+	padding: 0px 200px;
+	display: flex;
+	gap: 65px;
+}
+
+.nav__link {
+	font-weight: 500;
+	font-size: 16px;
+	color: white;
+	line-height: 30px;
+	letter-spacing: 0.2px;
+}
+
+.nav__link:hover {
+	font-weight: 600;
+}
+
+.nav__button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #FFFFFF;
+	width: 139px;
+	height: 52px;
+}
+
+.nav__button:hover {
+	width: 142px;
+	height: 55px;
+}
+
+.nav__button__login {
+	color: white;
+	font-size: 17px;
+	font-weight: 500;
+}
