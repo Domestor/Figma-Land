@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Graphik&display=swap');
+
 *{
 	padding: 0;
 	margin: 0;
@@ -22,6 +24,7 @@ html,body{
 	-webkit-text-size-adjust: 100%;
 	background-color: #181818;
 	font-family: 'Graphik', sans-serif;
+	color: white;
 }
 input,button,textarea{font-family:inherit;}
 input::-ms-clear{display: none;}
@@ -87,4 +90,71 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	color: white;
 	font-size: 17px;
 	font-weight: 500;
+}
+
+.headline {
+	display: flex;
+	justify-content: center;
+	flex-direction: column; 
+	align-items: center;
+	padding: 150px 0px;
+}
+
+.headline__title {
+	font-weight: 500;
+	font-size: 80px;
+	line-height: 88px;
+	text-align: center;
+}
+
+.headline__subtitle {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	letter-spacing: 0.2px;
+	text-align: center;
+	padding: 50px 0px;
+}
+
+.headline__buttons {
+	display: flex;
+	gap: 35px;
+}
+
+.headline__button {
+	width: 178px;
+	height: 65px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 25px;
+}
+
+.headline__button--try {
+	background-color: #4452FE;
+}
+
+.headline__button--learn {
+	border: 1px solid #FFFFFF;
+}
+
+.headline__button__link {
+	color: white;
+}
+
+.screens__image {
+	display: flex;
+	justify-self: center;
+}
+
+.screens__gradient {
+	position: absolute;
+    top: 1250px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 551px;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0) 100%);
 }
